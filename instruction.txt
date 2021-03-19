@@ -22,6 +22,6 @@ foreign key (project_name) references project);
 
 copy employee from 'C:\employee.csv' with delimiter ',';
 copy project from 'C:\project.csv' with delimiter ',';
-copy participation from 'C:\participate.csv' with delimiter ',';
+copy participation from 'C:\participation.csv' with delimiter ',';
 
 * Change accordingly to your file location.
