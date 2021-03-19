@@ -11,7 +11,7 @@ project_name varchar (30),
 budget numeric (11, 2),
 primary key (project_name));
 
-create table participate(
+create table participation(
 employee_id char(10),
 project_name varchar(30),
 primary key (employee_id, project_name),
@@ -22,6 +22,6 @@ foreign key (project_name) references project);
 
 copy employee from 'C:\employee.csv' with delimiter ',';
 copy project from 'C:\project.csv' with delimiter ',';
-copy participate from 'C:\participate.csv' with delimiter ',';
+copy participation from 'C:\participate.csv' with delimiter ',';
 
 * Change accordingly to your file location.
