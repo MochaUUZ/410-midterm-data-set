@@ -1,2 +1,9 @@
-# ICSI410-Midterm-Aftermath-Training
-Omg, so I did horrible on that midterm. <br/>Literally, omw preparing a funeral for my midterm grade once it out, Ugh. I invite everyone to attend this heart-breaking event of sending my midterm grade to hell and later holding a 30 min meditation time while lighting my *Homemade Caderwood and Lavender with essential oil infused candles*. 
+# Instruction
+
+1. Download the data schema folder that you like. 
+2. Open your DBMS and create the table need by copy & paste the content of readme.txt onto your query tool.
+3. import the table by using the following code on your query tool : 
+```
+copy [filename] from [file path] with delimiter ',';
+```
+
