@@ -1,0 +1,27 @@
+1. Create the table by paste this onto query tool
+
+create table employee (
+employee_ID char (10) ,
+name varchar (30),
+annual_salary numeric (9, 2),
+primary key (employee_ID));
+
+create table project(
+project_name varchar (30),
+budget numeric (11, 2),
+primary key (project_name));
+
+create table participate(
+employee_id char(10),
+project_name varchar(30),
+primary key (employee_id, project_name),
+foreign key (employee_id) references employee,
+foreign key (project_name) references project);
+
+2. Import the data by paste* this onto query tool.
+
+copy employee from 'C:\employee.csv' with delimiter ',';
+copy project from 'C:\project.csv' with delimiter ',';
+copy participate from 'C:\participate.csv' with delimiter ',';
+
+* Change accordingly to your file location.
